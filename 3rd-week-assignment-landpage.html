@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,200;1,300;1,400;1,500&family=Ysabeau+Office:wght@1;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19a55f78b1.js" crossorigin="anonymous"></script>
+    <title>Notch Technologies</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            width: 1140px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .logo {
+            float: left;
+            cursor: pointer;
+            font-family: 'Ysabeau Office', sans-serif;
+            transition: all 0.5s ease;
+        }
+
+        .logo:hover {
+            color: rgb(0, 119, 255);
+        }
+
+        .ulnav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .linav {
+            float: left;
+            margin-right: 30px;
+            list-style-type: none;
+
+        }
+
+        /* .linav:hover{
+                
+            } */
+        .linav a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px 10px;
+            transition: all 0.5s ease;
+        }
+
+        .linav a:hover {
+            background-color: rgb(0, 119, 255);
+            color: black;
+            border: 2px solid rgb(3, 92, 194);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        #header {
+            /* background-image: url(./assets/pexels-felix-mittermeier-956999.jpg);
+            background-size: cover; */
+            background-color: black;
+            height: 100vh;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            /* background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/pexels-felix-mittermeier-956999.jpg) no-repeat center center/cover; */
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .containerone {
+            width: 1140px;
+            margin: auto;
+        }
+
+        .sectionone {
+            margin-top: 10rem;
+        }
+
+        .sectionone .col-6 {
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+
+        .sectionone .col-6 img {
+            margin: 0px 65px;
+            width: 500px;
+            transition: all 1s ease;
+        }
+
+        .sectionone .col-6 img:hover {
+            margin: 0%;
+            padding: 30px 30px;
+            width: 600px;
+
+        }
+
+        .two {
+            font-size: 17px;
+        }
+
+        .sectionone .col-6 h1 {
+            text-align: center;
+            font-style: oblique;
+        }
+
+        .sectionone .col-6 h1:hover {
+            color: rgb(0, 119, 255);
+
+        }
+
+
+        .sectionone .col-6 p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sectionone .col-6 p:hover {
+            color: rgb(0, 119, 255);
+
+        }
+
+        /* .col-6 a {
+            text-decoration: none;
+            color: white;
+        } */
+
+        /* .col-6 button{
+                
+            } */
+        .sectionone a {
+            text-decoration: none;
+            color: white;
+            padding: 7px 15px;
+            margin-top: 50px;
+            cursor: pointer;
+            margin-left: 230px;
+            border-radius: 10px;
+            border: 2px solid white;
+            background-color: transparent;
+            transition: all 0.5s ease;
+        }
+
+        /* .col-6 button a:hover{
+                color: black;
+            } */
+        .sectionone a:hover {
+            background-color: rgb(0, 119, 255);
+            color: black;
+            border: 2px solid rgb(3, 92, 194);
+        }
+
+        /* section two */
+        .containertwo {
+            color: black;
+            width: 1000px;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: white;
+            border-radius: 50%;
+            background-color: rgb(0, 119, 255);
+            width: 70px;
+            height: 70px;
+            padding-top: 7px;
+        }
+
+        .sectiontwo {
+            float: right;
+            margin: 2.5rem 0px;
+        }
+
+        .col-4 {
+            float: left;
+            width: 33.3%;
+        }
+
+        .heading {
+            margin-bottom: 2.5rem;
+            color: black;
+            padding: 20px;
+            font-size: 20px;
+
+        }
+
+        .heading h1 span {
+            color: rgb(0, 119, 255);
+        }
+
+        /* sectionthree */
+        .heading2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+
+        }
+
+        .heading2 h1 span {
+            color: rgb(0, 119, 255);
+        }
+
+        .sectionthree .col-6 {
+            text-align: left;
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            font-size: 11px;
+        }
+
+        .sectionthree .col-6 img {
+            width: 50vw;
+            height: 60vh;
+        }
+
+        .sectionthree .col-6 .whoside {
+            background-color: black;
+            height: 60vh;
+            padding: 20px;
+        }
+
+        .sectionthree .col-6 h1 {
+            margin: 20px 0px 10px 0px;
+        }
+
+        .sectionthree .col-6 ul {
+            list-style-type: none;
+
+        }
+
+        .sectionthree .col-6 ul li {
+            padding-left: 10px;
+            line-height: 30px;
+            border-bottom: 1px dotted gray;
+        }
+
+        /* sectionfour */
+        /* .containerfour{
+            clear: both;
+        } */
+        .sectionfour {
+            width: 1140px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* .sectionfour .heading{
+            margin-left: 350px;
+        } */
+        .sectionfour .img img {
+            width: 150px;
+            height: 150px;
+            margin-right: 80px;
+        }
+
+        .sectionfour img:last-child {
+            margin-right: 0px;
+        }
+
+        /* sectionfive */
+        .sectionfive .col-6 {
+            text-align: left;
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            font-size: 11px;
+        }
+
+        .sectionfive .col-6 .Contactus {
+            background-color: black;
+            width: 100%;
+            height: 60%;
+            padding: 30px;
+        }
+
+        .sectionfive .col-6 .Contactus h1 {
+            font-size: 35px;
+        }
+
+        .sectionfive .col-6 .Contactus p {
+            margin: 5px 0px;
+            padding: 0%;
+            font-size: 15px;
+        }
+
+        .sectionfive .col-6 .sidemap iframe {
+            width: 100%;
+            height: 34.2rem;
+            border: 0px;
+        }
+
+        .sectionfive .col-6 .lab {
+            font-size: 15px;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .sectionfive .col-6 form:first-child {
+            margin-top: 0px;
+        }
+
+        .sectionfive .col-6 .inp {
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5px;
+            margin-left: 10px;
+
+        }
+
+        .sectionfive .col-6 textarea {
+            width: 100%;
+            margin-bottom: 30px;
+            border: 0px;
+            border-radius: 10px;
+            margin-left: 10px;
+            padding: 20px;
+        }
+
+        .sectionfive .col-6 .send {
+            width: 100%;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        /* sectionsix */
+        .sectionsix {
+            height: 120px;
+            background-color: rgb(0, 119, 255);
+            text-align: center;
+
+        }
+
+        .sectionsix h1 {
+            padding-top: 45px;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1 class="one">TOP-NOTCH</h1>
+                <h1 class="two">Technologies</h1>
+            </div>
+            <ul class="ulnav">
+                <li class="linav"><a href="#">Home</a></li>
+                <li class="linav"><a href="#what">What</a></li>
+                <li class="linav"><a href="#who">Who Us</a></li>
+                <li class="linav"><a href="#Contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+        <div class="containerone">
+            <div class="sectionone">
+                <div class="col-6">
+                    <h1>hello!</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam aliquam nostrum soluta iure eius.
+                        Pariatur, minus a. Officia omnis culpa, adipisci cupiditate eligendi perferendis, repudiandae
+                        accusantium sed fugit quas dignissimos.</p>
+                    <a href="#">Buy Now</a>
+                </div>
+                <div class="col-6">
+                    <img src="./assets/Laptop-Top-View-Transparent-Background (2).png" alt="#">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="containertwo">
+        <div id="what">
+            <div class="sectiontwo">
+                <div class="heading">
+                    <h1><span>What</span> We Do</h1>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-building-columns icon"></i>
+                    <h1>Banking Investment</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores.</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-building-columns icon"></i>
+                    <h1>Banking Investment</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores.</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-building-columns icon"></i>
+                    <h1>Banking Investment</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="containerthree">
+        <div id="who">
+            <section class="sectionthree">
+                <div class="col-6">
+                    <div class="who">
+                        <img src="./assets/people.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="whoside">
+                        <div class="heading2">
+                            <h1><span>Who</span> We Are</h1>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, expedita nesciunt.
+                            Officiis
+                            tempore autem expedita quibusdam sed eius libero exercitationem quos adipisci, quae quasi
+                            totam,
+                            ab cum ducimus suscipit sit?
+                        </p>
+                        <h1>Our Team</h1>
+                        <ul>
+                            <li>Ahsan Raza: CEO</li>
+                            <li>Aliyan Ahmed: Director of Company</li>
+                            <li>Bilal Ahmed: Investment Management</li>
+                            <li>Fatima Ahmed: Senior Accountant</li>
+                            <li>Muhammad Haris: Lead Accountant</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="containerfour">
+        <div class="sectionfour">
+            <div class="heading">
+                <h1><span>Our</span> Clients</h1>
+            </div>
+            <div class="img">
+                <img src="./assets/logo1.png" alt="">
+                <img src="./assets/logo2.png" alt="">
+                <img src="./assets/logo3.png" alt="">
+                <img src="./assets/logo4.png" alt="">
+                <img src="./assets/logo5.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="containerfive">
+        <div id="Contactus">
+            <section class="sectionfive">
+                <div class="col-6">
+                    <div class="Contactus">
+                        <h1>Contact Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ab!</p>
+                        <form>
+                            <div class="name">
+                                <label class="lab" for="fname">Enter Your Name:</label>
+                                <input class="inp" type="text" placeholder="Ahsan...etc" id="fname">
+                            </div>
+                            <div class="email">
+                                <label class="lab" for="email">Enter Your Email:</label>
+                                <input class="inp" placeholder=".....@etc.com" type="email" id="email">
+                            </div>
+                            <div class="phone">
+                                <label class="lab" for="phone">Enter Your Phone No:</label>
+                                <input class="inp" placeholder="03*********" type="number" id="phone">
+                            </div>
+                            <div class="msg">
+                                <label class="lab" for="msg">Message:</label>
+                                <textarea cols="10" placeholder="Type your Message" rows="2"></textarea>
+                            </div>
+                            <div class="send">
+                                <button class="send" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidemap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.977299217504!2d67.06764507460215!3d24.932843242358746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f68274f5579%3A0x8f246d47e6eb1f33!2sIslam%20Plaza!5e0!3m2!1sen!2s!4v1689234235309!5m2!1sen!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="containersix">
+        <div class="sectionsix">
+            <h1>Copyright &#169; 2023, Notch Technologies, All Rights Reserved</h1>
+        </div>
+    </div>
+</body>
+
+</html>
